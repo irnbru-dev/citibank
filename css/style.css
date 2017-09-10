@@ -18,7 +18,7 @@ ul {
     background-position: center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 
@@ -43,6 +43,7 @@ ul {
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
 }
 
 .form__inner input[type="email"],
@@ -59,7 +60,7 @@ ul {
     margin-bottom: 15px;
     border: 1px solid #aaaaaa;
     border-radius: 3px;
-    padding: 15px 10px;
+    padding: 14px 10px;
     outline: none;
 }
 
@@ -113,6 +114,11 @@ input[type=checkbox]:checked + label:before {
     -webkit-background-size: 10%;
     background-size: 80%;
     background-repeat: no-repeat;
+}
+
+.form__inner .hyperlink {
+    margin-left: 20px;
+    color: #aaaaaa;
 }
 
 .form__title {
@@ -289,6 +295,12 @@ input[type=checkbox]:checked + label:before {
     padding-bottom: 80px;
 }
 
+@media (max-width: 768px) {
+    .advantages {
+        padding-bottom: 0px;
+    }
+}
+
 .advantages__img {
     position: relative;
 }
@@ -380,13 +392,14 @@ input[type=checkbox]:checked + label:before {
 }
 
 .footnote {
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 
 .footnote ul {
     font-size: 18px;
     font-weight: 300;
-    padding-left: 30px;
+    padding-left: 25px;
     border-left: 5px solid #4488bb;
 }
 
