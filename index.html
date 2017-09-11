@@ -23,21 +23,23 @@
                     voluptatibus. Adipisci consequuntur distinctio ducimus est maiores nam odio odit vitae voluptas?</p>
             </div>
             <div class="col-md-6 offset-lg-2 col-lg-4">
-                <form action="" method="POST" id="requestForm">
+                <form action="" method="POST" id="requestForm" novalidate>
                     <div class="form__inner">
                         <span class="form__title">Request form</span>
                         <div class="form__field">
                             <span class="hint">Enter your Email</span>
-                            <input type="email" id="email" placeholder="example@mail.com">
-                            <div class="error-box"></div>
+                            <input type="email" id="email" name="email" placeholder="example@mail.com"
+                                   title="Enter correct Email" data-placement="bottom">
+                            <label for="email"></label>
                         </div>
                         <div class="form__field">
                             <span class="hint">Enter your Name</span>
-                            <input type="name" id="name" placeholder="Konstantin Konstantinov">
-                            <div class="error-box"></div>
+                            <input type="name" id="name" name="name" placeholder="Konstantin Konstantinov"
+                                   title="Enter correct Name" data-placement="bottom">
+                            <label for="name"></label>
                         </div>
                         <div class="select">
-                            <select>
+                            <select id="select">
                                 <option value="country">Select you country</option>
                                 <option value="russia">Russia</option>
                                 <option value="norway">Norway</option>
@@ -190,7 +192,7 @@
 </main>
 
 
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
