@@ -44,7 +44,7 @@ $(function () {
         e.preventDefault();
 
 
-        if ($('.not_error').length === 2 && $('#checkbox').prop('checked')) {
+        if ($('.not_error').length === 2 && $('#checkbox').prop('checked') && $('#select').val() !== '') {
 
             $.post('send.php', $(this).serialize(), function (response) {
                 console.log(response);
